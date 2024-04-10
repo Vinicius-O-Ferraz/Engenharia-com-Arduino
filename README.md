@@ -41,6 +41,8 @@ O Arduino é uma ferramenta poderosa para o desenvolvimento de projetos de IoT. 
 
 ## Projetos
 
+### Introdução e Leds
+
 Primeiro começaremos a prática do arduino com um circuito simples para piscar um led
 
 https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/2a7da551-82bd-4da8-bdd7-1cc5b2e0b12e
@@ -52,6 +54,11 @@ https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/d3b
 Logo depois criaremos um semáforo adicionando mais um led, amarelo, ao circuito anterior
 
 https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/7d3fdcf6-2b8c-4cda-8629-833cf34aefed
+
+### Pushbuttom com resistor pullup
+
+https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/9a01c856-5457-4162-9d57-7253b8d1caa2
+
 
 
 
