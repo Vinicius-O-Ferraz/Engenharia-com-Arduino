@@ -39,4 +39,20 @@ O curso base para esse estudo pode ser encontrado nesse link: https://www.udemy.
 
 O Arduino é uma ferramenta poderosa para o desenvolvimento de projetos de IoT. Aprender a usar o Arduino pode te preparar para uma carreira em áreas como automação, eletrônica e desenvolvimento de software.
 
+## Projetos
+
+Primeiro começaremos a prática do arduino com um circuito simples para piscar um led
+
+https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/2a7da551-82bd-4da8-bdd7-1cc5b2e0b12e
+
+Depois faremos um sinal usando dois leds de cores diferentes, um verde e outro vermelho. Eles piscam em intervalos distintos criando uma sinaleira
+
+https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/d3bdaddd-90ce-4e3b-9718-33de756f8d53
+
+Logo depois criaremos um semáforo adicionando mais um led, amarelo, ao circuito anterior
+
+https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/7d3fdcf6-2b8c-4cda-8629-833cf34aefed
+
+
+
 
