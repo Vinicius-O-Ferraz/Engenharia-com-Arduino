@@ -55,9 +55,27 @@ Logo depois criaremos um semáforo adicionando mais um led, amarelo, ao circuito
 
 https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/7d3fdcf6-2b8c-4cda-8629-833cf34aefed
 
+
+
 ### Pushbuttom com resistor pullup
 
 https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/9a01c856-5457-4162-9d57-7253b8d1caa2
+
+### Display de 7 segmentos
+Aqui aprendi a usar o display de 7 segmentos. Como mostra na figura abaixo
+
+<p align="center"><img src="https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/8fd3b2a5-ec17-4aba-96d0-b2b49a1252bf" alt="download" width="50%"/></p>
+
+De maneira simples, um display LED de 7 segmentos é um tipo comum de dispositivo de exibição usado para mostrar números. Ele consiste em sete segmentos individuais de LEDs dispostos na forma de um "8", com um segmento adicional para cada ponto decimal, se necessário. Cada segmento é chamado de "a", "b", "c", "d", "e", "f" e "g".
+
+A ideia por trás de um display de 7 segmentos é que cada segmento pode ser aceso ou apagado de forma independente para criar diferentes padrões. Cada segmento representa uma parte específica do número que está sendo exibido. Por exemplo, para exibir o número "1", você só precisa acender os segmentos "b" e "c", enquanto para exibir o número "2", você precisa acender os segmentos "a", "b", "g", "e" e "d", e assim por diante.
+
+Para controlar um display de 7 segmentos, você precisa enviar sinais elétricos para os segmentos relevantes para formar o número desejado. Isso geralmente é feito com um circuito eletrônico simples que recebe a entrada do número a ser exibido e converte isso em sinais que ligam e desligam os LEDs nos segmentos apropriados.
+
+Nessa prática foi programado esse LED para escrever números de 0 a 9.
+
+https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/477ec4fd-6c66-42b1-a424-48ac16384f2b
+
 
 
 
