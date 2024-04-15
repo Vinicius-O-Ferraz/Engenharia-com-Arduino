@@ -76,6 +76,17 @@ Nessa prática foi programado esse LED para escrever números de 0 a 9.
 
 https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/477ec4fd-6c66-42b1-a424-48ac16384f2b
 
+Em seguida, este circuito foi criado conectando os mesmos pinos do arduino nos pinos do display. Ao executar esse circuito usando a função programada anteriormente temos que os dois digitos estão no mesmo estado.
+
+https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/d47a76f4-6791-44a9-9fea-30af9ecac9f9
+
+Depois criamos uma função que alterna o estado dos pinos de saída de cada display. Isso nos permite imprimir os digitos de maneira separada criando um contador eficiente.
+
+https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/5e9fc602-f442-4cfe-99cc-0fa212397b3f
+
+Por fim, o código foi retrabalhado e funções para ligar e desligar o circuito usando o botão foram implementadas.
+
+https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/2aea579f-a420-4581-b798-e9866886a848
 
 
 
