@@ -88,7 +88,9 @@ Por fim, o código foi retrabalhado e funções para ligar e desligar o circuito
 
 https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/2aea579f-a420-4581-b798-e9866886a848
 
+Em seguida adicionei dois botões. Um adiciona uma unidade no display o outro remove uma unidade no display.
 
+https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/13838173-bb98-4cb1-a553-7c134f170112
 
 
 
