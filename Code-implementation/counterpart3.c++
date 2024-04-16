@@ -1,8 +1,4 @@
 
-#define BTMUP 1
-#define BTMDOWN 2
-#define LED 13
-
 #define SEG_A 2
 #define SEG_B 3
 #define SEG_C 4
@@ -13,10 +9,16 @@
 
 #define DSP_D 9
 #define DSP_U 10
-#define BTM 11
 
-int contagem = 0;
+#define BTN 11
+
+#define BTN_UP 0
+#define BTN_DOWN 1
+
+#define LED 13
+
 int espera = 0;
+int contagem = 0;
 int objetivo = 0;
 bool ativo = false;
 
@@ -29,7 +31,7 @@ int mapaDisplay[] = {
 void mostrarNumero(int numero) {
   
   if (numero < 0) {
-   	numero = 0; 
+    numero = 0; 
   }
   
   int mapa = mapaDisplay[numero];
@@ -43,18 +45,17 @@ void mostrarNumero(int numero) {
   
 }
 
-void mostrarDigitos(int dezena, int unidade){
-
+void mostrarDigitos(int dezena, int unidade) {
+  
   digitalWrite(DSP_U, HIGH);
   digitalWrite(DSP_D, LOW);
   mostrarNumero(unidade);
-  delay(50);
-  
+  delay(100);
   
   digitalWrite(DSP_U, LOW);
   digitalWrite(DSP_D, HIGH);
   mostrarNumero(dezena);
-  delay(50);
+  delay(100);
   
 }
 
@@ -66,21 +67,22 @@ void setup()
   pinMode(SEG_D, OUTPUT);
   pinMode(SEG_E, OUTPUT);
   pinMode(SEG_F, OUTPUT);
-  pinMode(SEG_G, OUTPUT);
+  pinMode(SEG_G, OUTPUT);   
   
-  pinMode(DSP_D, OUTPUT);
-  pinMode(DSP_U, OUTPUT);
+  pinMode(DSP_U, OUTPUT); 
+  pinMode(DSP_D, OUTPUT);   
   
-  pinMode(BTM, INPUT_PULLUP);
-  pinMode(BTMUP, INPUT_PULLUP);
-  pinMode(BTMDOWN, INPUT_PULLUP);
-  pinMode(LED,OUTPUT);
+  pinMode(BTN, INPUT_PULLUP);
+  pinMode(BTN_UP, INPUT_PULLUP);
+  pinMode(BTN_DOWN, INPUT_PULLUP);
+  
+  pinMode(LED, OUTPUT); 
+      
+}
 
-  }
-
-void contar(){
-if (espera == 5){
-   contagem++;
+void contar() {
+  if (espera == 5) {
+    contagem++;
     espera = 0;
   }
   
@@ -92,53 +94,53 @@ if (espera == 5){
   dez = contagem / 10;
   uni = contagem % 10;
   
-  mostrarDigitos(dez,uni);
+  mostrarDigitos(dez, uni); 
 }
-
 
 void loop() {
   
-  if (digitalRead(BTMUP)==0){
-    if (objetivo<99){   
-       objetivo++;
-    }while (digitalRead(BTMUP)==0){
+  if ( digitalRead(BTN_UP) == 0 ) {
+    if (objetivo < 99) {
+      objetivo++;
     }
-  } 
-  
-  if (digitalRead(BTMDOWN)==0){
-  	if (objetivo>0){   
-       objetivo--;
-    }while (digitalRead(BTMUP)==0){
-    }
+    while( digitalRead(BTN_UP) == 0 ){ }
   }
   
-  if(digitalRead(BTM)==0){
+  if ( digitalRead(BTN_DOWN) == 0 ) {
+    if (objetivo > 0) {
+      objetivo--;
+    }
+    while( digitalRead(BTN_DOWN) == 0 ){}
+  }
+  
+  if ( digitalRead(BTN) == 0 ) {
     contagem = 0;
+        
     digitalWrite(DSP_U, LOW);
-  	digitalWrite(DSP_D, LOW);
+    digitalWrite(DSP_D, LOW);
     
     ativo = true;
+    digitalWrite(LED, LOW);
     
-    while(digitalRead(BTM)==0);
+    while( digitalRead(BTN) == 0 ){ }
   }
-  
-  if (ativo){
-  	 contar();
-    if (contagem == objetivo){
-    	ativo = false;
-      	objetivo = 0;
+ 
+  if (ativo == true) {
+    contar();
+    
+    if (contagem == objetivo) {
+       ativo = false;
+       objetivo = 0;
+       digitalWrite(LED, HIGH);
     }
-    	
-  }else{
-  	int dez;
-  	int uni;
-  	dez = objetivo / 10;
-  	uni = objetivo % 10;
-  
-  mostrarDigitos(dez,uni);
-  }
-  
+    
+  } else {
+    int dez;
+    int uni;
+
+    dez = objetivo / 10;
+    uni = objetivo % 10;
+
+    mostrarDigitos(dez, uni); 
+  }         
 }
-  
-
-
