@@ -92,5 +92,10 @@ Em seguida adicionei dois botões. Um adiciona uma unidade no display o outro re
 
 https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/13838173-bb98-4cb1-a553-7c134f170112
 
+## Display LCD 16 por 2
+
+Essa prática é bem simples. Foi usado um display 16 por 2 para exibir uma mensgem na tela. A configuração do circuito é simples bastando ligar o pino VCC ao positivo da placa de ensaio e o GND ao negativo da placa de ensaio. Depois passamos um potenciomentro conectado ao VD e quatro pinos de dados. 
+
+https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/19626c12-d8e8-4220-8e3b-0ac20a35c2c3
 
 
