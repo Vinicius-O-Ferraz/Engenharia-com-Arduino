@@ -98,4 +98,11 @@ Essa prática é bem simples. Foi usado um display 16 por 2 para exibir uma mens
 
 https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/19626c12-d8e8-4220-8e3b-0ac20a35c2c3
 
+## Motores DC
+
+Depois, estudei um pouco sobre as características dos motores de DC. E então desenvolvi uma aplicação prática para controlar um "carrinho" através de dois motores
+
+https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/8a4d740e-6e7d-4300-b790-7f662fb5f27b
+
+Esta aplicação tem 4 botões para o controle que funcionam meio que como um joystick. Orientando os motores para frente,tras, direita e esquerda. Além disso há um botão para parar. 
 
