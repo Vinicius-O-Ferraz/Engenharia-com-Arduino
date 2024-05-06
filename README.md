@@ -106,3 +106,11 @@ https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/8a4
 
 Esta aplicação tem 4 botões para o controle que funcionam meio que como um joystick. Orientando os motores para frente,tras, direita e esquerda. Além disso há um botão para parar. 
 
+## PWN
+
+Nesse pequeno circuito é ilustrado um exmplo prático de PWN. O sinal de onda medidio pelo osciloscópio ajuda a entender o conceito de duty Cycle que permite controlar o tempo de ligado ou desligado do circuito.
+
+https://github.com/Vinicius-O-Ferraz/Engenharia-com-Arduino/assets/146992032/f19ee98d-d103-4303-899d-c122d21b631a
+
+
+
